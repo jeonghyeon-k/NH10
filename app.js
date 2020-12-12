@@ -27,6 +27,8 @@ const p_goal_complete = require("./routes/parent/goal/p_goal_complete")
 const p_goal_edit = require("./routes/parent/goal/p_goal_edit")
 const p_goal_main = require("./routes/parent/goal/p_goal_main")
 
+const c_popup = require("./routes/child/c_popup")
+
 const PORT = 3000
 
 //app.set("views", path.join(__dirname, "views")) // views경로 설정
@@ -57,6 +59,8 @@ app.use("/p/goal", p_goal_main)
 app.use("/p/goal/main", p_goal_main)
 app.use("/p/goal/complete", p_goal_complete)
 app.use("/p/goal/edit", p_goal_edit)
+
+app.use("/c/popup",c_popup)
 
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}!`)

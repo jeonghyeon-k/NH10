@@ -1,0 +1,120 @@
+.wrap{
+    width: 400px;
+    height: 418px;
+    padding-top:48px;
+    margin-top:252px;
+    margin-left:50px;
+    margin-right:50px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.box-container1{
+    width: 400px;
+    height:32px;
+}
+.box1_1{
+    width: 225px;
+    height: 32px;
+    margin-left:88px;
+    margin-right:87px;
+    font-family: NanumBarunGothic;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6dce59;
+}
+.box-container2{
+    width: 400px;
+    height:42px;
+}
+.box2_1{
+    width: 169px;
+    height: 42px;
+    margin-top : 12px;
+    margin-left:115px;
+    margin-right:116px;
+    font-family: NanumBarunGothic;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.box-container3{
+    width: 400px;
+    height:143px;
+}
+.box3_1{
+    width: 51.4px;
+    height: 127.2px;
+    margin-top: 63px;
+    margin-left:64.1px;
+    object-fit: contain;
+}
+.box3_2{
+    width: 143px;
+    height: 143px;
+    margin-top: 40px;
+    margin-left: 13.5px;
+    object-fit: contain;
+    /* border: solid 2px #6dce59; */
+}
+.box3_3{
+    width: 60px;
+    height: 134.8px;
+    margin-top:46px;
+    margin-left:5px;
+    object-fit: contain;
+}
+.box-container4{
+    width: 400px;
+    height:20px;
+}
+.box4_1{
+    width: 167px;
+    height: 20px;
+    margin-top: 65px;
+    margin-left:117px;
+    margin-right:116px;
+    font-family: NanumBarunGothic;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777777;
+}
+.box-container5{
+    width:400px;
+    height:74px;
+    margin-top: 30px;
+    background-color: #6dce59;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.box5_1{
+    width: 50px;
+    height: 32px;
+    padding-top:15px;
+    margin-left:175px;
+    margin-right:175px;
+    font-family: NanumBarunGothic;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
