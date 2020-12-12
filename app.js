@@ -19,7 +19,7 @@ const c_goal_add_calendar = require("./routes/child/goal/add/c_goal_add_calendar
 const c_goal_add_complete = require("./routes/child/goal/add/c_goal_add_complete")
 const c_goal_add_set = require("./routes/child/goal/add/c_goal_add_set")
 const c_goal_add_terms = require("./routes/child/goal/add/c_goal_add_terms")
-const c_goal_main_add = require("./routes/child/goal/c_goal_main_add")
+const c_goal_main_add = require("./routes/child/goal/c_ goal_main_add")
 
 const p_consumption = require("./routes/parent/p_consumption")
 const p_saving = require("./routes/parent/p_saving")
@@ -43,7 +43,7 @@ app.use("/c/goal/main", c_goal_main)
 app.use("/c/goal/complete", c_goal_complete)
 app.use("/c/goal/ing", c_goal_ing)
 
-//app.use("/c/goal/main/add", c_goal_main_add)
+app.use("/c/goal/main/add", c_goal_main_add)
 app.use("/c/goal/add", c_goal_add_terms)
 app.use("/c/goal/add/term", c_goal_add_terms)
 app.use("/c/goal/add/calendar", c_goal_add_calendar)
