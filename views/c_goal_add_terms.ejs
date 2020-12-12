@@ -1,7 +1,270 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head> </head>
-    <body>
-        <div>c_goal_add_terms</div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH10</title>
+    <style type="text/css">
+        /* 초기화 코드 */
+        *{ margin: 0; padding: 0;}
+        img{ border: 0;}
+        li{ list-style: none;}
+        a{ text-decoration: none;}
+
+        .container {
+                max-width: 500px;
+        }
+        .okbutton {
+            max-width: 500px;
+            height: 32px;
+            background-color: #6dce59;
+            padding: 24px 0px;
+            color: #ffffff;
+            font-size: 28px;
+            text-align: center;
+        }
+        .navbar {
+            height: 70px;
+            text-align: center;
+        }
+        .backicon {
+            float: left;
+            width: 36px;
+        }
+        .title {
+            display: inline-block;
+            font-size: 28px;
+            margin-top: 3px;
+        }
+        .pagebox {
+            text-align: right;
+        }
+        .pageicon1 {
+            display: inline-block;
+            width: 28px;
+            padding: 9px 0px;
+            margin-right: 4px;
+        }
+        .pageicon2 {
+            float: right;
+            width: 14px;
+            padding: 4px 0px;
+            margin-top: 12px;
+            margin-right: 4px;
+        }
+        .pageicon3 {
+            float: right;
+            width: 14px;
+            padding: 4px 0px;
+            margin-top: 12px;
+            margin-right: 4px;
+        }
+        .box-container1 {
+            width: 460px;
+            height: 36px;
+            margin-left: 20px;
+            margin-top: 34px;
+        }
+
+        #wrap{
+            width: 460px;
+            margin: 0 20px 0 20px;
+        }
+
+        #wrap > p{
+            display: inline;
+            height: 90  px;
+            margin: 24px 5px 54px 0;
+            font-family: NanumBarunGothic;
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        #wrap > img{
+            display: inline;
+        }
+
+        #guide{
+            width: 410px;
+            height: 90px;
+            margin: 54px 0 70px 0;
+            padding: 10px 24px 10px 24px;
+            border-radius: 21px;
+            border: solid 1px #777777;
+            background-color: #ffffff;
+
+        }
+
+        #guide > div{
+            height: 50px;
+            margin:0 auto;
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+        }
+
+        #guide > div > button{
+            display: inline;
+            position: relative;
+            border: 0;
+            margin-left: 150px;
+            background-color: #ffffff;
+            float: right;
+            vertical-align: text-bottom;
+        }
+
+        #guide > div > p{
+            display: inline;
+            position: relative;
+            height: 26px;
+            font-family: NanumBarunGothic;
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.7;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        #agree > div{
+            height: 60px;
+            border-bottom: solid 1px #c4c4c4;
+            margin-bottom: 30px;
+        }
+
+        #agree > div > button{
+            display: inline;
+            position: relative;
+            border: 0;
+            background-color: #ffffff;
+            vertical-align: middle;
+        }
+
+        #agree > div > p{
+            display: inline;
+            height: 32px;
+            margin: 0 29px 0 12px;
+            font-family: NanumBarunGothic;
+            font-size: 28px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        #agree > ul{
+            margin-bottom: 150px;
+        }
+        #agree > ul > li > button.check{
+            display: inline;
+            position: relative;
+            border: 0;
+            background-color: #ffffff;
+            vertical-align: middle;
+        }
+
+        #agree > ul > li > button.detail{
+            display: inline;
+            position: relative;
+            border: 0;
+            background-color: #ffffff;
+            vertical-align: middle;
+            float: right;
+        }
+
+        #agree > ul > li > p{
+            display: inline;
+            height: 26px;
+            margin: 37px 74px 9px 12px;
+            font-family: NanumBarunGothic;
+            font-size: 22px;
+            font-weight: 200;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.18;
+            letter-spacing: normal;
+            text-align: left;
+            color: #777777;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="backicon">
+                <img
+                    src="img/icon_left_button_s.png"
+                    alt="logo"
+                    width="100%"
+                    height="100%"
+                />
+            </div>
+            <div class="title">목표 달성</div>
+        </div>
+        <div class="pagebox">
+            <div class="pageicon1">
+                <img
+                src="img/icon_circle_1.png"
+                alt="logo"
+                width="100%"
+                height="100%"
+            />
+            </div>
+            <div class="pageicon2">
+                <img
+                    src="img/icon_circle_gray.png"
+                    alt="logo"
+                    width="100%"
+                    height="100%"
+                />
+            </div>
+            <div class="pageicon3">
+                <img
+                    src="img/icon_circle_gray.png"
+                    alt="logo"
+                    width="100%"
+                    height="100%"
+                />
+            </div>
+        </div>
+            
+        <div id="wrap">
+            
+            <p>약관을<br />
+                확인해주세요</p><img src="img/icon_imoge05.png" />
+
+            <div id="guide">
+                <div>
+                    <p>단기목표설정 설명서 확인</p><button type="button"><img src="img/Checkbox_b.png" /></button>
+                </div>
+            </div>
+
+            <div id="agree">
+                <div>
+                    <button type="button"><img src="img/Checkbox_b.png" /></button><p>전체동의</p>
+                </div>
+
+                <ul>
+                    <li><button type="button" class="check"><img src="img/icon_uncheck.png" /></button><p>[필수]고유식별번호 처리 동의</p><button type="button" class="detail"><img src="img/icon_right.png"></button></li>
+                    <li><button type="button" class="check"><img src="img/icon_uncheck.png" /></button><p>[필수]개인정보 제공동의</p><button type="button" class="detail"><img src="img/icon_right.png"></button></li>
+                    <li><button type="button" class="check"><img src="img/icon_uncheck.png" /></button><p>[필수]서비스 이용 약관동의</p><button type="button" class="detail"><img src="img/icon_right.png"></button></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+    <div class="okbutton">확인</div>
+
+</body>
 </html>
