@@ -1,200 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NH10</title>
-    <style type="text/css">
-        /* 초기화 코드 */
-        *{ margin: 0; padding: 0;}
-        img{ border: 0;}
-        li{ list-style: none;}
-        a{ text-decoration: none;}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NH10</title>
+        <style type="text/css">
+            /* 초기화 코드 */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+            }
 
-        #wrap{
-            width: 460px;
-            margin: 0 20px 0 20px;
-        }
+            #wrap {
+                width: 460px;
+                margin: 0 20px 0 20px;
+            }
 
-        #review > div, #review > h1{ 
-            display: inline;
-            height: 42px;
-            margin: 65px 0 0 0;
-            font-family: NanumBarunGothic;
-            font-size: 36px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.5;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-        }
+            #review > div,
+            #review > h1 {
+                display: inline;
+                height: 42px;
+                margin: 65px 0 0 0;
+                font-family: NanumBarunGothic;
+                font-size: 36px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
 
-        #review > div > img{
-            width: 36px;
-            height: 36px;
-            object-fit: cover;
-        }
+            #review > div > img {
+                width: 36px;
+                height: 36px;
+                object-fit: cover;
+            }
 
-        #ex_division > p{
-            height: 32px;
-            margin: 55px 1px 40px 0;
-            font-family: NanumBarunGothic;
-            font-size: 28px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.71;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-        }
+            #ex_division > p {
+                height: 32px;
+                margin: 55px 1px 40px 0;
+                font-family: NanumBarunGothic;
+                font-size: 28px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.71;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
 
-        #ex_division{
-            text-align: center;
-        }
+            #ex_division {
+                text-align: center;
+            }
 
-        #ex_division > img{
-            width: 340px;
-            height: 356px;
-            margin-bottom: 70px;
-        }
+            #ex_division > img {
+                width: 340px;
+                height: 356px;
+                margin-bottom: 70px;
+            }
 
-        #ex_division > ul{
-            margin-bottom: 50px;
-            text-align: left;
-        }
+            #ex_division > ul {
+                margin-bottom: 50px;
+                text-align: left;
+            }
 
-        #ex_division > ul > li{
-            margin-bottom: 14px;
-        }
-        
-        #ex_division > ul > li > div{
-            display: inline;
-            height: 26px;
-        }
+            #ex_division > ul > li {
+                margin-bottom: 14px;
+            }
 
-        #ex_division > ul > li > div > img{
-            display: inline;
-            height: 18px;
-            width: 18px;
-            align-content: center;
-        }
+            #ex_division > ul > li > div {
+                display: inline;
+                height: 26px;
+            }
 
-        #ex_division > ul > li > p.left{
-            display: inline;
-            height: 26px;
-            margin: 0 0 0 14px;
-            font-family: NanumBarunGothic;
-            font-size: 22px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.18;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
+            #ex_division > ul > li > div > img {
+                display: inline;
+                height: 18px;
+                width: 18px;
+                align-content: center;
+            }
 
-        }
+            #ex_division > ul > li > p.left {
+                display: inline;
+                height: 26px;
+                margin: 0 0 0 14px;
+                font-family: NanumBarunGothic;
+                font-size: 22px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.18;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
 
-        #ex_division > ul > li > p.right{
-            display: inline;
-            float: right;
-        }
+            #ex_division > ul > li > p.right {
+                display: inline;
+                float: right;
+            }
 
-        #ex_division > ul > button {
-            height: 61px;
-            width: 100%;
-            height: 61px;
-            margin-top: 6px;
-            padding: 17px 191px 18px;
-            border-radius: 10px;
-            border: solid 1px #c4c4c4;
-            background-color: #ffffff;
-        }
+            #ex_division > ul > button {
+                height: 61px;
+                width: 100%;
+                height: 61px;
+                margin-top: 6px;
+                padding: 17px 191px 18px;
+                border-radius: 10px;
+                border: solid 1px #c4c4c4;
+                background-color: #ffffff;
+            }
 
-        #ex_pattern > div{
-            margin-bottom: 16px;
-        }
+            #ex_pattern > div {
+                margin-bottom: 16px;
+            }
 
-        #ex_pattern > div > p{
-            display: inline;
-            height: 26px;
-            font-family: NanumBarunGothic;
-            font-size: 22px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 2.18;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-        }
+            #ex_pattern > div > p {
+                display: inline;
+                height: 26px;
+                font-family: NanumBarunGothic;
+                font-size: 22px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.18;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
 
-        #ex_pattern > div > h3{
-            display: inline;
-            height: 32px;
-            float: right;
-            font-family: NanumBarunGothic;
-            font-size: 28px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.71;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-        }
+            #ex_pattern > div > h3 {
+                display: inline;
+                height: 32px;
+                float: right;
+                font-family: NanumBarunGothic;
+                font-size: 28px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.71;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
 
-        #ex_pattern > div > img.updown{
-            float:right;
-            height: 32px;
-            width: 32px;
-            vertical-align: text-bottom;
-        }
-        
+            #ex_pattern > div > img.updown {
+                float: right;
+                height: 32px;
+                width: 32px;
+                vertical-align: text-bottom;
+            }
 
-        #ex_pattern > div.graph{
-            text-align: center;
-            margin-top: 50px;
-        }
+            #ex_pattern > div.graph {
+                text-align: center;
+                margin-top: 50px;
+            }
 
-        #ex_pattern > div > img.pattern{
-            width: 410px;
-        }
-    </style>
-</head>
-<body>
+            #ex_pattern > div > img.pattern {
+                width: 410px;
+            }
+        </style>
+    </head>
+    <body>
         <div id="wrap">
             <div id="review">
-                <h1>NH10님의<br />
-                    소비가 조금 늘었네요</h1>
+                <h1>
+                    NH10님의<br />
+                    소비가 조금 늘었네요
+                </h1>
                 <div>
-                    <img src="img/icon_imoge01.png" />
+                    <img src="i/../public/images/icon_imoge01.png" />
                 </div>
-
             </div>
 
             <div id="ex_division">
-                <p>신상우님의 소비패턴</p>
-                <img src="img/ex_division.png" />
-                    <ul>
-                        <li><div><img src="img/point.png" /></div><p class="left">식비</p><p class="right">48%</p></li>
-                        <li><div><img src="img/point.png" /></div><p class="left">쇼핑</p><p class="right">32%</p></li>
-                        <li><div><img src="img/point.png" /></div><p class="left">교통비</p><p class="right">20%</p></li>
-                        <button>전체보기</button>
-                    </ul>
+                <p>NH10님의 소비패턴</p>
+                <img src="/../public/images/ex_division.png" />
+                <ul>
+                    <li>
+                        <div><img src="/../public/images/point.png" /></div>
+                        <p class="left">식비</p>
+                        <p class="right">48%</p>
+                    </li>
+                    <li>
+                        <div><img src="/../public/images/point.png" /></div>
+                        <p class="left">쇼핑</p>
+                        <p class="right">32%</p>
+                    </li>
+                    <li>
+                        <div><img src="/../public/images/point.png" /></div>
+                        <p class="left">교통비</p>
+                        <p class="right">20%</p>
+                    </li>
+                    <button>전체보기</button>
+                </ul>
             </div>
 
             <div id="ex_pattern">
-                <div><p>이번 달 지출</p><h3>194,000원</h3></div>
-                <div><p>이전 대비 소비</p><h3>10%</h3><img class="updown" src="img/icon_up.png" /></div>
+                <div>
+                    <p>이번 달 지출</p>
+                    <h3>194,000원</h3>
+                </div>
+                <div>
+                    <p>이전 대비 소비</p>
+                    <h3>10%</h3>
+                    <img class="updown" src="/../public/images/icon_up.png" />
+                </div>
 
-                <div class="graph"><img class="pattern" src="img/ex_pattern.png" /></div>
+                <div class="graph">
+                    <img
+                        class="pattern"
+                        src="/../public/images/ex_pattern.png"
+                    />
+                </div>
             </div>
-            
         </div>
-    
-</body>
+    </body>
 </html>
