@@ -1,0 +1,22 @@
+div{
+    margin : 0px;
+    padding :0px;
+}
+
+.wrap{
+    max-width: 500px;
+    height: 70px;
+}
+.logo{
+    display: inline-block;
+    box-shadow: 1pt 1pt 5pt 0pt #000000;
+}
+.button1{
+    display: inline-block;
+}
+.button2{
+    display: inline-block;
+}
+.button3{
+    display: inline-block;
+}

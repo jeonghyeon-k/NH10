@@ -30,6 +30,7 @@ const PORT = 3000
 
 //app.set("views", path.join(__dirname, "views")) // views경로 설정
 app.set("view engine", "ejs") // view엔진 지정
+app.use("/public", express.static(path.join(__dirname, "public")))
 
 // URI와 핸들러를 매핑
 app.use("/", c_consumption)

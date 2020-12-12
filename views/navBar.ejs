@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="http://code.jquery.com/jquery-1.11.3.min.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script>
+            $(function () {
+                var sBtn = $("ul > li")
+                sBtn.find("a").click(function () {
+                    sBtn.removeClass("active")
+                    $(this).parent().addClass("active")
+                })
+            })
+            var para = document.location.href.split("/")
+            para.forEach((element) => {
+                switch (element) {
+                    case "consumption":
+                        console.log("consumption")
+                        break
+                    case "saving":
+                        console.log("saving")
+                        break
+                    case "goal":
+                        console.log("goal")
+                        break
+                }
+            })
+        </script>
+        <style type="text/css">
+            .wrap {
+                max-width: 500px;
+                margin: 0px;
+                width: 100%;
+                height: 68px;
+                padding: 10px 20px 0px 20px;
+            }
+            .logo {
+                display: inline-block;
+                margin-top: 20px;
+                width: 127px;
+                height: 28px;
+            }
+
+            ul {
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+                display: flex;
+                width: 300px;
+                height: 100%;
+                float: right;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a {
+                text-decoration: none;
+            }
+            ul > li {
+                margin: 0px;
+                height: 100%;
+                display: inline-block;
+            }
+            ul > li > div {
+                height: 100%;
+                text-align: center;
+            }
+            ul > li > div > a {
+                font-size: 28px;
+                margin-top: 15px;
+                display: inline-block;
+                color: #777777;
+            }
+            ul > li > div:hover,
+            ul > li > div:focus,
+            ul > li > div:active,
+            ul > li > div.active {
+                border-bottom: 2px solid #000000;
+            }
+            ul > li > div:hover > a,
+            ul > li > div:focus > a,
+            ul > li > div:active > a,
+            ul > li > div.active > a {
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="logo">
+                <a href="">
+                    <img
+                        src="/../public/images/logo.png"
+                        alt="logo"
+                        width="100%"
+                        height="100%"
+                    />
+                </a>
+            </div>
+            <ul>
+                <li class="active">
+                    <div clsss="atag"><a href="">소비</a></div>
+                </li>
+                <li>
+                    <div clsss="atag"><a href="">저축</a></div>
+                </li>
+                <li>
+                    <div clsss="atag"><a href="">목표달성</a></div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
