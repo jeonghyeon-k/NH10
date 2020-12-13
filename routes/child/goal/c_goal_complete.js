@@ -17,7 +17,7 @@ const GetMain = (req, res) => {
             __dirname + "/../../../views/c_goal_complete.ejs",
             "utf8"
         )
-    res.end(ejs.render(htmlstream, {}))
+    res.end(ejs.render(htmlstream, { type: "goal" }))
 }
 
 router.get("/", GetMain)

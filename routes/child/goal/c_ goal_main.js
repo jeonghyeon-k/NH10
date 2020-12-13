@@ -24,7 +24,7 @@ const GetMain = (req, res) => {
             })
             .then((data) => {
                 console.log(data.data)
-                res.end(ejs.render(htmlstream, {}))
+                res.end(ejs.render(htmlstream, { type: "goal" }))
             })
     )
 }

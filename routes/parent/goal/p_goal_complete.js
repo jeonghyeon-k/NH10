@@ -10,14 +10,14 @@ const GetMain = (req, res) => {
         fs.readFileSync(__dirname + "/../../../views/header.ejs", "utf8")
     htmlstream =
         htmlstream +
-        fs.readFileSync(__dirname + "/../../../views/navbar.ejs", "utf8")
+        fs.readFileSync(__dirname + "/../../../views/navbar_p.ejs", "utf8")
     htmlstream =
         htmlstream +
         fs.readFileSync(
             __dirname + "/../../../views/p_goal_complete.ejs",
             "utf8"
         )
-    res.end(ejs.render(htmlstream, {}))
+    res.end(ejs.render(htmlstream, { type: "goal" }))
 }
 
 router.get("/", GetMain)
