@@ -24,7 +24,7 @@ let recarray = "";
                 Insymd: "20191105",
                 Ineymd: "20191109",
                 PageNo: "1",
-                Dmcnt: "15"
+                Dmcnt: "15",
             })
             .then((data) => {
                 //console.log(data.data.REC)

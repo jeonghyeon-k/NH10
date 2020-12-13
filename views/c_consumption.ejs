@@ -32,11 +32,10 @@
             #wrap {
                 max-width: 500px;
                 margin: 0 auto;
-
-                padding: 0 20px 0 20px;
             }
 
             #review {
+                margin-left: 20px;
                 margin-bottom: 56px;
             }
 
@@ -66,6 +65,8 @@
                 width: 404px;
                 height: 277px;
                 padding: 29px 28px;
+                margin-left: 20px;
+                margin-right: 20px;
                 border-radius: 20px;
                 border: solid 2px #6dce59;
                 background-color: #ffffff;
@@ -125,6 +126,10 @@
                 text-align: left;
                 color: #222222;
                 float: right;
+            }
+            #ex_list {
+                margin-left: 20px;
+                margin-right: 20px;
             }
 
             #ex_list > ul {
@@ -221,6 +226,8 @@
 
             #ex_division {
                 text-align: center;
+                margin-left: 20px;
+                margin-right: 20px;
             }
 
             #chart-dn {
@@ -316,6 +323,10 @@
                 border: solid 1px #c4c4c4;
                 background-color: #ffffff;
             }
+            #ex_pattern {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
 
             #ex_pattern > div {
                 margin-bottom: 16px;
@@ -371,10 +382,10 @@
     <body>
         <div id="wrap">
             <div id="review">
-                <h1>
+                <div>
                     NH10님.<br />
                     조금 많이 쓴거 같아요
-                </h1>
+                </div>
                 <div>
                     <img src="/../public/images/icon_imoge01.png" />
                 </div>
@@ -1034,6 +1045,7 @@
                                         size: void 0,
                                         style: void 0,
                                         weight: null,
+<<<<<<< HEAD
                                     },
                                     offset: 4,
                                     opacity: 1,
@@ -1074,6 +1086,48 @@
                                             else r = t.label
                                         return "" + r
                                     },
+=======
+                                    },
+                                    offset: 4,
+                                    opacity: 1,
+                                    padding: {
+                                        top: 4,
+                                        right: 4,
+                                        bottom: 4,
+                                        left: 4,
+                                    },
+                                    rotation: 0,
+                                    textAlign: "start",
+                                    formatter: function (t) {
+                                        if (o.isNullOrUndef(t)) return null
+                                        var e,
+                                            n,
+                                            a,
+                                            r = t
+                                        if (o.isObject(t))
+                                            if (o.isNullOrUndef(t.label))
+                                                if (o.isNullOrUndef(t.r))
+                                                    for (
+                                                        r = "",
+                                                            a = 0,
+                                                            n = (e = Object.keys(
+                                                                t
+                                                            )).length;
+                                                        a < n;
+                                                        ++a
+                                                    )
+                                                        r +=
+                                                            (0 !== a
+                                                                ? ", "
+                                                                : "") +
+                                                            e[a] +
+                                                            ": " +
+                                                            t[e[a]]
+                                                else r = t.r
+                                            else r = t.label
+                                        return "" + r
+                                    },
+>>>>>>> cfdd8ec6501d85871a6ba384021f1a91554b8403
                                     listeners: {},
                                 },
                                 _ = l.helpers,
@@ -1109,6 +1163,7 @@
                                         i = r.$context
                                     !0 === _.callback(a, [i]) &&
                                         ((t[w].dirty = !0), r.update(i))
+<<<<<<< HEAD
                                 }
                             }
                             function g(t, e) {
@@ -1137,6 +1192,36 @@
                                             f && x(o, l.enter, u))
                                 }
                             }
+=======
+                                }
+                            }
+                            function g(t, e) {
+                                var n,
+                                    a,
+                                    r = t[w],
+                                    i = r.listeners
+                                if (i.enter || i.leave) {
+                                    if ("mousemove" === e.type)
+                                        a = y(t, e.x, e.y)
+                                    else if ("mouseout" !== e.type) return
+                                    var o, l, s, u, f, d
+                                    ;(n = r.hovered),
+                                        (r.hovered = a),
+                                        (o = t),
+                                        (l = i),
+                                        (u = a),
+                                        ((s = n) || u) &&
+                                            (s
+                                                ? u
+                                                    ? s.label !== u.label &&
+                                                      (d = f = !0)
+                                                    : (d = !0)
+                                                : (f = !0),
+                                            d && x(o, l.leave, s),
+                                            f && x(o, l.enter, u))
+                                }
+                            }
+>>>>>>> cfdd8ec6501d85871a6ba384021f1a91554b8403
                             ;(l.defaults.global.plugins.datalabels = n),
                                 (l.defaults.global.plugins.datalabels = n),
                                 l.plugins.register({
