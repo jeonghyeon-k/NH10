@@ -2,6 +2,76 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8" />
+        <script>
+            var plus1 = function () {
+                var goal_money = document.querySelector("#goal_money").value
+                var result = parseFloat(goal_money) + 10000.0
+                if (isNaN(result)) {
+                    result = 10000.0
+                }
+                document.querySelector("#goal_money").value = result
+            }
+            var plus5 = function () {
+                var goal_money = document.querySelector("#goal_money").value
+                var result = parseFloat(goal_money) + 50000.0
+                if (isNaN(result)) {
+                    result = 50000.0
+                }
+                document.querySelector("#goal_money").value = result
+            }
+            var plus10 = function () {
+                var goal_money = document.querySelector("#goal_money").value
+                var result = parseFloat(goal_money) + 100000.0
+                if (isNaN(result)) {
+                    result = 100000.0
+                }
+                document.querySelector("#goal_money").value = result
+            }
+            var plus15 = function () {
+                var goal_money = document.querySelector("#goal_money").value
+                var result = parseFloat(goal_money) + 150000.0
+                if (isNaN(result)) {
+                    result = 150000.0
+                }
+                document.querySelector("#goal_money").value = result
+            }
+            var S_plus1 = function () {
+                var support_money = document.querySelector("#support_money")
+                    .value
+                var s_result = parseFloat(support_money) + 10000.0
+                if (isNaN(s_result)) {
+                    s_result = 10000.0
+                }
+                document.querySelector("#support_money").value = s_result
+            }
+            var S_plus5 = function () {
+                var support_money = document.querySelector("#support_money")
+                    .value
+                var s_result = parseFloat(support_money) + 50000.0
+                if (isNaN(s_result)) {
+                    s_result = 50000.0
+                }
+                document.querySelector("#support_money").value = s_result
+            }
+            var S_plus10 = function () {
+                var support_money = document.querySelector("#support_money")
+                    .value
+                var s_result = parseFloat(support_money) + 100000.0
+                if (isNaN(s_result)) {
+                    s_result = 100000.0
+                }
+                document.querySelector("#support_money").value = s_result
+            }
+            var S_plus15 = function () {
+                var support_money = document.querySelector("#support_money")
+                    .value
+                var s_result = parseFloat(support_money) + 150000.0
+                if (isNaN(s_result)) {
+                    s_result = 150000.0
+                }
+                document.querySelector("#support_money").value = s_result
+            }
+        </script>
         <title>목표달성 수정-부모</title>
         <link
             rel="stylesheet"
@@ -33,39 +103,55 @@
             </div>
             <div class="box-container4">목표 상품 금액</div>
             <div class="box-container5">
-                <input class="input_goal" type="text" name="goal_money" />
+                <input class="input_goal" type="text" id="goal_money" />
                 <div class="box5_1">원</div>
                 <div class="box-container5-2">
                     <div class="box5_2_1">
-                        <button class="box5_2_3">+1만</button>
+                        <button class="box5_2_3" onclick="plus1();">
+                            +1만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+5만</button>
+                        <button class="box5_2_3" onclick="plus5();">
+                            +5만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+10만</button>
+                        <button class="box5_2_3" onclick="plus10();">
+                            +10만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+15만</button>
+                        <button class="box5_2_3" onclick="plus15();">
+                            +15만
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="box-container4">지원 요청 금액</div>
             <div class="box-container5">
-                <input class="input_goal" type="text" name="support_money" />
+                <input class="input_goal" type="text" id="support_money" />
                 <div class="box5_1">원</div>
                 <div class="box-container5-2">
                     <div class="box5_2_1">
-                        <button class="box5_2_3">+1만</button>
+                        <button class="box5_2_3" onclick="S_plus1();">
+                            +1만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+5만</button>
+                        <button class="box5_2_3" onclick="S_plus5();">
+                            +5만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+10만</button>
+                        <button class="box5_2_3" onclick="S_plus10();">
+                            +10만
+                        </button>
                     </div>
                     <div class="box5_2_2">
-                        <button class="box5_2_3">+15만</button>
+                        <button class="box5_2_3" onclick="S_plus15();">
+                            +15만
+                        </button>
                     </div>
                 </div>
             </div>
