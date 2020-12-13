@@ -3,9 +3,9 @@ const get = require("./api.js")
 const gettimestamp = () => {
     let settime = new Date().getUTCMilliseconds()
     if (settime < 100) {
-        settime = "00" + settime
+        settime = "01" + settime
     } else if (99 < settime && settime < 1000) {
-        settime = "0" + settime
+        settime = "1" + settime
     } else {
         gettimestamp()
     }
