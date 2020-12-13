@@ -1,7 +1,7 @@
 const express = require("express")
 const fs = require("fs")
 const ejs = require("ejs")
-const api = require("../../../Activity")
+const api = require("../../Activity")
 const router = express.Router()
 
 const GetMain = (req, res) => {
@@ -26,7 +26,7 @@ const GetMain = (req, res) => {
                 Insymd: "20191105",
                 Ineymd: "20191109",
                 PageNo: "1",
-                Dmcnt: "15"
+                Dmcnt: "15",
             })
             .then((data) => {
                 console.log(data.data)

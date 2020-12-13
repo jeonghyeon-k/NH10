@@ -14,6 +14,7 @@
 .navbar {
     width: 450px;
     height: 70px;
+    padding-top: 35px;
     text-align: center;
 }
 .backicon {
@@ -28,18 +29,25 @@
 .pagebox {
     text-align: right;
 }
-.pageicon {
+.pageicon1 {
     display: inline-block;
     width: 14px;
-    padding: 9px 0px;
-    margin-top: 2px;
+    padding: 4px 0px;
+    margin-top: 12px;
+    margin-right: 4px;
 }
 .pageicon2 {
-    display: inline-block;
+    float: right;
     width: 28px;
-    height: 28px;
+    padding: 9px 0px;
+    margin-right: 4px;
+}
+.pageicon3 {
+    float: right;
+    width: 14px;
     padding: 4px 0px;
-    margin-left: 4px;
+    margin-top: 12px;
+    margin-right: 4px;
 }
 .box-container2 {
     width: 480px;
@@ -288,12 +296,6 @@
     border: none;
     color: #ffffff;
 }
-.box6_1 > a {
-    font-family: NanumBarunGothic;
-    font-size: 28px;
+a {
     text-decoration: none;
-    line-height: 1.14;
-    text-align: center;
-    border: none;
-    color: #ffffff;
 }
