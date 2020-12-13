@@ -1,14 +1,12 @@
-.wrap{
+.wrap {
     max-width: 500px;
-    margin:0 auto;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
 }
-.box-container1{
-    width: 460px;
+.box-container1 {
     height: 90px;
-    margin-left:20px;
-    margin-right:20px;
 }
-.box1_1{
+.box1_1 {
     display: inline-block;
     width: 337px;
     height: 90px;
@@ -22,12 +20,12 @@
     text-align: left;
     color: #000000;
 }
-.box1_2{
+.box1_2 {
     display: inline-block;
     width: 44px;
     height: 43px;
-    margin-top:43px;
-    margin-left:4px;
+    margin-top: 43px;
+    margin-left: 4px;
     margin-bottom: -4px;
     object-fit: contain;
     font-stretch: normal;
@@ -37,17 +35,14 @@
     text-align: center;
     color: #777777;
 }
-.box-container2{
-    width: 460px;
+.box-container2 {
     height: 32px;
-    margin-left:20px;
-    margin-right:20px;
 }
-.box2_1{
+.box2_1 {
     width: 162px;
     height: 32px;
     font-family: NanumBarunGothic;
-    margin-top:50px;
+    margin-top: 50px;
     font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
@@ -57,13 +52,10 @@
     text-align: left;
     color: #000000;
 }
-.box-container3{
-    width:460px;
-    height:37px;
-    margin-left:20px;
-    margin-right:20px;
+.box-container3 {
+    height: 37px;
 }
-.box3_1{
+.box3_1 {
     display: inline-block;
     width: 120px;
     height: 26px;
@@ -79,12 +71,12 @@
     text-align: left;
     color: #777777;
 }
-.box3_2{
+.box3_2 {
     display: inline-block;
     width: 170px;
     height: 37px;
     margin-top: 19px;
-    margin-left:160px;
+    margin-left: 160px;
     font-family: NanumBarunGothic;
     font-size: 32px;
     font-weight: normal;
@@ -95,24 +87,17 @@
     text-align: left;
     color: #000000;
 }
-.box-container4{
-    width:460px;
-    height:152px;
-    margin-left:20px;
-    margin-right:20px;
+.box-container4 {
+    height: 152px;
 }
-.box4_1{
-    width:460px;
-    height:152px;
-    margin-top:70px;
+.box4_1 {
+    height: 152px;
+    margin-top: 70px;
 }
-.box-container5{
-    width:460px;
-    height:32px;
-    margin-left:20px;
-    margin-right:20px;
+.box-container5 {
+    height: 32px;
 }
-.box5_1{
+.box5_1 {
     width: 162px;
     height: 32px;
     margin: 90px 42px 40px 0;
@@ -126,25 +111,17 @@
     text-align: left;
     color: #000000;
 }
-.box-container6{
-    width:460px;
-    height:202px;
-    margin-left: 20px;
-    margin-right: 20px;
+.box-container6 {
+    height: 202px;
 }
-.box6_1{
-    width:460px;
-    height:202px;
-    margin-top:40px;
+.box6_1 {
+    height: 202px;
+    margin-top: 40px;
 }
-.box-container7{
-    width:460px;
-    height:202px;
-    margin-left: 20px;
-    margin-right: 20px;
+.box-container7 {
+    height: 202px;
 }
-.box7_1{
-    width:460px;
-    height:202px;
-    margin-top:50px;
+.box7_1 {
+    height: 202px;
+    margin-top: 50px;
 }

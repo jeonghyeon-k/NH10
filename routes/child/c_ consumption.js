@@ -14,7 +14,7 @@ const GetMain = (req, res) => {
     htmlstream =
         htmlstream +
         fs.readFileSync(__dirname + "/../../views/c_consumption.ejs", "utf8")
-    res.end(ejs.render(htmlstream, {}))
+    res.end(ejs.render(htmlstream, { type: "consumption" }))
 }
 
 router.get("/", GetMain)
