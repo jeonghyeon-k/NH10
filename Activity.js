@@ -32,6 +32,7 @@ exports.transaction = async (param) => {
         url: `InquireTransactionHistory.nh`,
         type: "post",
         param,
+        isTuno: timestamp,
     })
 }
 
@@ -43,6 +44,7 @@ exports.balance = async (param) => {
         url: `InquireBalance.nh`,
         type: "post",
         param,
+        isTuno: timestamp,
     })
 }
 
@@ -54,5 +56,6 @@ exports.card = async (param) => {
         url: `InquireCreditCardAuthorizationHistory.nh`,
         type: "post",
         param,
+        isTuno: timestamp,
     })
 }
