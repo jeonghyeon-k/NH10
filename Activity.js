@@ -33,8 +33,8 @@ exports.balance = async (param) => {
     })
 }
 
-//개인카드 승앤내역 조회
-exports.Card = async (param) => {
+//개인카드 승인내역 조회
+exports.card = async (param) => {
     return await get.api({
         apiNm: "InquireCreditCardAuthorizationHistory",
         url: `InquireCreditCardAuthorizationHistory.nh`,
