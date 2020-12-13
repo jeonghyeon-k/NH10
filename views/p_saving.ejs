@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../public/css/p_saving.css" />
     <title>NH10</title>
     <meta charset="utf-8">
@@ -24,20 +25,79 @@
        </div>
        <div class="box-container4">
            <div class="box4_1">총 저축 금액</div>
-           <div class="box4_2">280,000원</div>
+           <div class="box4_2">280,000</div>
+           <div class="box4_3">원</div>
        </div>
        <div class="box-container5">
-           <img class="box5_1" src="image/screenshot.png" alt="graph">
+            <canvas id="graph"></canvas>
        </div>
+       <script>
+        var ctx = document.getElementById("graph").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+            labels: ["10월", "11월", "12월"],
+            datasets: [{
+                data: [<%=one%>, <%=two%>, <%=three%>],
+                backgroundColor: [
+                    '#7fe36b',
+                    '#7fe36b',
+                    '#7fe36b'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false //This will do the task
+                },
+                maintainAspectRatio: true, // default value. false일 경우 포함된 div의 크기에 맞춰서 그려짐.
+                scales: {
+                    xAxes:[{
+                        gridLines:{
+                            display:false
+                            }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            display:false
+                            },
+                        gridLines:{
+                            display:false
+                            }
+                        }]
+                    }
+                }
+            });
+    </script>
        <div class="box-container6">
            <div class="box6_1">저축 상품 추천</div>
        </div>
        <div class="box-container7">
-           <img class="box7_1" src="image/product1.png" alt="product1">
-       </div>
-       <div class="box-container8">
-           <img class="box8_1" src="image/product2.png" alt="product2">
-       </div>
+            <div class="box7_1">
+                <div class="box7_1_1">NH 청년 적금</div>
+                <div class="box7_1_2">나의 대학 등록금 마련하기</div>
+                <img class="box7_1_3" src="../public/images/icon_white_right.png">
+            </div>
+            <div class="box7_2">1년에 5만원씩 저축하면</div>
+            <img class="box7_3" src="../public/images/구성 요소 68 – 2.png">
+            <img class="box7_4" src="../public/images/button_bule.png">
+            <div class="box7_5">연 이자</div>
+            <div class="box7_6">8,125</div>
+            <div class="box7_7">원</div>
+        </div>
+        <div class="box-container8">
+            <div class="box8_1">
+                <div class="box8_1_1">NH 여행 자유 적금</div>
+                <div class="box8_1_2">친구들과 여행자금 모으기</div>
+                <img class="box8_1_3" src="../public/images/icon_white_right.png">
+            </div>
+            <div class="box8_2">6개월에 3만원씩 저축하면</div>
+            <img class="box8_3" src="../public/images/구성 요소 69 – 2.png">
+            <img class="box8_4" src="../public/images/구성 요소 70 – 2.png">
+            <div class="box8_5">이자</div>
+            <div class="box8_6">1,050</div>
+            <div class="box8_7">원</div>
+        </div>
     </div>
 </body>
 

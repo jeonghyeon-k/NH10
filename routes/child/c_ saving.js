@@ -14,7 +14,8 @@ const GetMain = (req, res) => {
     res.end(ejs.render(htmlstream, {
         one:100,
         two:200,
-        three:300
+        three:300,
+        type : "saving"
     }))
 }
 
