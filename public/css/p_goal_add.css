@@ -286,6 +286,7 @@
 
 .navbar {
     max-width: 500px;
+    width: 450px;
     height: 70px;
     text-align: center;
 }
