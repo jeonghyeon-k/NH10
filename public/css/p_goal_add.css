@@ -272,6 +272,7 @@
 }
 
 .navbar {
+    max-width: 500px;
     height: 70px;
     text-align: center;
 }

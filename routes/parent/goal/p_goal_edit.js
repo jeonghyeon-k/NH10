@@ -5,8 +5,9 @@ const router = express.Router()
 
 const GetMain = (req, res) => {
     let htmlstream = ""
+
     htmlstream = fs.readFileSync(
-        __dirname + "/../../views/p_goal_edit.ejs",
+        __dirname + "/../../../views/p_goal_edit.ejs",
         "utf8"
     )
     res.end(ejs.render(htmlstream, {}))

@@ -5,10 +5,15 @@ const router = express.Router()
 
 const GetMain = (req, res) => {
     let htmlstream = ""
-    htmlstream = fs.readFileSync(
-        __dirname + "/../../views/c_saving.ejs",
-        "utf8"
-    )
+    htmlstream =
+        htmlstream +
+        fs.readFileSync(__dirname + "/../../views/header.ejs", "utf8")
+    htmlstream =
+        htmlstream +
+        fs.readFileSync(__dirname + "/../../views/navbar.ejs", "utf8")
+    htmlstream =
+        htmlstream +
+        fs.readFileSync(__dirname + "/../../views/c_saving.ejs", "utf8")
     res.end(ejs.render(htmlstream, {}))
 }
 

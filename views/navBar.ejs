@@ -29,6 +29,29 @@
                         break
                 }
             })
+            para.forEach((element) => {
+                switch (element) {
+                    case "c":
+                        console.log("child")
+                        break
+                    case "p":
+                        console.log("parent")
+                        break
+                }
+            })
+            function change(param) {
+                switch (param) {
+                    case "consumption":
+                        console.log("consumption")
+                        break
+                    case "saving":
+                        console.log("saving")
+                        break
+                    case "goal":
+                        console.log("goal")
+                        break
+                }
+            }
         </script>
         <style type="text/css">
             .wrap {
@@ -103,13 +126,29 @@
             </div>
             <ul>
                 <li class="active">
-                    <div clsss="atag"><a href="">소비</a></div>
+                    <div clsss="atag">
+                        <a
+                            id="consumption"
+                            href=""
+                            onclick="change('consumption')"
+                        >
+                            소비</a
+                        >
+                    </div>
                 </li>
                 <li>
-                    <div clsss="atag"><a href="">저축</a></div>
+                    <div clsss="atag">
+                        <a id="saving" href="/" onclick="change('saving')"
+                            >저축</a
+                        >
+                    </div>
                 </li>
                 <li>
-                    <div clsss="atag"><a href="">목표달성</a></div>
+                    <div clsss="atag">
+                        <a id="goal" href="" onclick="change('goal')"
+                            >목표달성</a
+                        >
+                    </div>
                 </li>
             </ul>
         </div>
