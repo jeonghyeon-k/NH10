@@ -1,6 +1,6 @@
 .wrap {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 150px auto;
 }
 
 .box-container1 {
@@ -108,6 +108,7 @@
     height: 124px;
     padding-left: 0px;
     object-fit: contain;
+    align-content: right;
 }
 .box2_5 {
     display: inline-block;
@@ -143,16 +144,16 @@
 }
 .box2_6 {
     float: left;
-    width: 101px;
-    height: 36px;
+
+    height: 32px;
     border-radius: 20px;
     border: solid 2px #6dce59;
 }
 .box2_7 {
     display: inline-block;
-    width: 105px;
-    height: 26px;
-    margin-top: 10px;
+
+    margin-top: 5px;
+    margin-left: 9px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;

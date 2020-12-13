@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script> -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../public/css/c_saving.css"
+        />
+        <title>NH10</title>
+        <meta charset="utf-8" />
+        <!-- for Mobile Meta -->
+        <meta
+            content="width=device-width, height=device-height, initial-scale=1.0"
+            name="viewport"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    </head>
 
-<head>
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script> -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../public/css/c_saving.css" />
-    <title>NH10</title>
-    <meta charset="utf-8">
-    <!-- for Mobile Meta -->
-    <meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-</head>
-
-<body>
-    <div class="wrap">
-        <div class="box-container1">
-            <div class="box1_1">NH10님.<br>꾸준함이 정말 대단해요</div>
-            <img class="box1_2" src="../public/images/icon_imoge03.png" alt="smile">
-        </div>
-        <div class="box-container2">
-            <div class="box2_1">나의 저축 통장</div>
-        </div>
-        <div class="box-container3">
-            <div class="box3_1">총 저축 금액</div>
-            <div class="box3_2">280,000</div>
-            <div class="box3_3">원</div>
-        </div>
-        <div class="box-container4">
-            <!-- <img class="box4_1" src="image/screenshot.png" alt="graph"> -->
-            <canvas id="graph"></canvas>
-        </div>
+    <body>
+        <div class="wrap">
+            <div class="box-container1">
+                <div class="box1_1">NH10님.<br />꾸준함이 정말 대단해요</div>
+                <img
+                    class="box1_2"
+                    src="../public/images/icon_imoge03.png"
+                    alt="smile"
+                />
+            </div>
+            <div class="box-container2">
+                <div class="box2_1">나의 저축 통장</div>
+            </div>
+            <div class="box-container3">
+                <div class="box3_1">총 저축 금액</div>
+                <div class="box3_2">280,000</div>
+                <div class="box3_3">원</div>
+            </div>
+            <div class="box-container4">
+                <!-- <img class="box4_1" src="image/screenshot.png" alt="graph"> -->
+                <canvas id="graph"></canvas>
+            </div>
             <script>
                 var ctx = document.getElementById("graph").getContext('2d');
                 var myChart = new Chart(ctx, {
@@ -47,58 +60,72 @@
                     },
                     options: {
                         legend: {
-                            display: false //This will do the task
+                            display: false, //This will do the task
                         },
                         maintainAspectRatio: true, // default value. false일 경우 포함된 div의 크기에 맞춰서 그려짐.
                         scales: {
                             xAxes:[{
                                 gridLines:{
                                     display:false
-					                }
+                               }
                             }],
                             yAxes: [{
                                 ticks: {
-                                    display:false
+                                    display:false,
+                                    beginAtZero:true
                                     },
                                 gridLines:{
-						            display:false
-					                }
+                              display:false
+                               }
                                 }]
                             }
                         }
                     });
-
             </script>
-        <div class="box-container5">
-            <div class="box5_1">저축 상품 추천</div>
-        </div>
-        <div class="box-container6">
-            <div class="box6_1">
-                <div class="box6_1_1">NH 청년 적금</div>
-                <div class="box6_1_2">나의 대학 등록금 마련하기</div>
-                <img class="box6_1_3" src="../public/images/icon_white_right.png">
+            <div class="box-container5">
+                <div class="box5_1">저축 상품 추천</div>
             </div>
-            <div class="box6_2">1년에 5만원씩 저축하면</div>
-            <img class="box6_3" src="../public/images/구성 요소 68 – 2.png">
-            <img class="box6_4" src="../public/images/button_bule.png">
-            <div class="box6_5">연 이자</div>
-            <div class="box6_6">8,125</div>
-            <div class="box6_7">원</div>
-        </div>
-        <div class="box-container7">
-            <div class="box7_1">
-                <div class="box7_1_1">NH 여행 자유 적금</div>
-                <div class="box7_1_2">친구들과 여행자금 모으기</div>
-                <img class="box7_1_3" src="../public/images/icon_white_right.png">
+            <div class="box-container6">
+                <div class="box6_1">
+                    <div class="box6_1_1">NH 청년 적금</div>
+                    <div class="box6_1_2">나의 대학 등록금 마련하기</div>
+                    <img
+                        class="box6_1_3"
+                        src="../public/images/icon_white_right.png"
+                    />
+                </div>
+                <div class="box6_2">1년에 5만원씩 저축하면</div>
+                <img
+                    class="box6_3"
+                    src="../public/images/구성 요소 68 – 2.png"
+                />
+                <img class="box6_4" src="../public/images/button_bule.png" />
+                <div class="box6_5">연 이자</div>
+                <div class="box6_6">8,125</div>
+                <div class="box6_7">원</div>
             </div>
-            <div class="box7_2">6개월에 3만원씩 저축하면</div>
-            <img class="box7_3" src="../public/images/구성 요소 69 – 2.png">
-            <img class="box7_4" src="../public/images/구성 요소 70 – 2.png">
-            <div class="box7_5">이자</div>
-            <div class="box7_6">1,050</div>
-            <div class="box7_7">원</div>
+            <div class="box-container7">
+                <div class="box7_1">
+                    <div class="box7_1_1">NH 여행 자유 적금</div>
+                    <div class="box7_1_2">친구들과 여행자금 모으기</div>
+                    <img
+                        class="box7_1_3"
+                        src="../public/images/icon_white_right.png"
+                    />
+                </div>
+                <div class="box7_2">6개월에 3만원씩 저축하면</div>
+                <img
+                    class="box7_3"
+                    src="../public/images/구성 요소 69 – 2.png"
+                />
+                <img
+                    class="box7_4"
+                    src="../public/images/구성 요소 70 – 2.png"
+                />
+                <div class="box7_5">이자</div>
+                <div class="box7_6">1,050</div>
+                <div class="box7_7">원</div>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

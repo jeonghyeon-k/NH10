@@ -16,8 +16,7 @@ const GetMain = (req, res) => {
         htmlstream +
         fs.readFileSync(__dirname + "/../../views/c_consumption.ejs", "utf8")
     res.end(ejs.render(htmlstream, { type: "consumption" }))
-    res.end(ejs.render(htmlstream, {}))
-
+    /*
     console.log(
         api
             .card({
@@ -32,7 +31,7 @@ const GetMain = (req, res) => {
                 console.log(data.data)
                 res.end(ejs.render(htmlstream, {}))
             })
-    )
+    )*/
 }
 
 router.get("/", GetMain)
