@@ -29,7 +29,7 @@ const p_goal_main = require("./routes/parent/goal/p_goal_main")
 
 const c_popup = require("./routes/child/c_popup")
 const splash_c = require("./routes/splash_c")
-const splash_p = require("./routes/splash_p")
+const splash_p = require("./routes/splash_c")
 
 const PORT = 3000
 
