@@ -28,6 +28,8 @@ const p_goal_edit = require("./routes/parent/goal/p_goal_edit")
 const p_goal_main = require("./routes/parent/goal/p_goal_main")
 
 const c_popup = require("./routes/child/c_popup")
+const splash_c = require("./routes/splash_c")
+const splash_p = require("./routes/splash_c")
 
 const PORT = 3000
 
@@ -36,8 +38,8 @@ app.set("view engine", "ejs") // view엔진 지정
 app.use("/public", express.static(path.join(__dirname, "public")))
 
 // URI와 핸들러를 매핑
-app.use("/", c_consumption)
-app.use("/c", c_consumption)
+app.use("/", splash_c)
+app.use("/c", splash_c)
 app.use("/c/consumption", c_consumption)
 app.use("/c/saving", c_saving)
 app.use("/c/goal", c_goal_main)
@@ -52,7 +54,7 @@ app.use("/c/goal/add/calendar", c_goal_add_calendar)
 app.use("/c/goal/add/complete", c_goal_add_complete)
 app.use("/c/goal/add/set", c_goal_add_set)
 
-app.use("/p", p_consumption)
+app.use("/p", splash_p)
 app.use("/p/consumption", p_consumption)
 app.use("/p/saving", p_saving)
 app.use("/p/goal", p_goal_main)
@@ -60,7 +62,7 @@ app.use("/p/goal/main", p_goal_main)
 app.use("/p/goal/complete", p_goal_complete)
 app.use("/p/goal/edit", p_goal_edit)
 
-app.use("/c/popup",c_popup)
+app.use("/c/popup", c_popup)
 
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}!`)
