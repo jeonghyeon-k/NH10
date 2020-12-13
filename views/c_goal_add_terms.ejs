@@ -3,7 +3,45 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NH10</title>
+        <script>
+            var count=0;
+            var count2=0;
+            function changeImg1(){
+                var img=document.getElementById("button_explanation");
+                if(count%2==1) //두번 클릭 시
+                {
+                    img.src="/../public/images/Checkbox_b.png"
+                    count++;
+                }
+                else {
+                img.src="/../public/images/Checkbox_a.png" // 홀수번 클릭 이미지 변경
+                count++;
+                }
+            };
+            function changeImg2(){ //전체 동의
+                var img=document.getElementById("button_everything");
+                var img2=document.getElementById("uncheck_1")
+                var img3=document.getElementById("uncheck_2")
+                var img4=document.getElementById("uncheck_3")
+                if(count2%2==1) //두번 클릭시
+                {
+                    img.src="/../public/images/Checkbox_b.png" //이미지 변경
+                    img2.src="/../public/images/icon_uncheck.png" //이미지 변경
+                    img3.src="/../public/images/icon_uncheck.png" //이미지 변경
+                    img4.src="/../public/images/icon_uncheck.png" //이미지 변경
+                    count2++;
+                }
+                else //홀수번 클릭 시
+                {
+                    img.src="/../public/images/Checkbox_a.png" //이미지 변경
+                    img2.src="/../public/images/icon_check.png" //이미지 변경
+                    img3.src="/../public/images/icon_check.png" //이미지 변경
+                    img4.src="/../public/images/icon_check.png" //이미지 변경
+                    count2++;
+                }
+            };
+        </script>
+        <title>목표달성-약관</title>
         <style type="text/css">
             /* 초기화 코드 */
             * {
@@ -255,16 +293,16 @@
                 <div id="guide">
                     <div>
                         <p>단기목표설정 설명서 확인</p>
-                        <button type="button">
-                            <img src="/../public/images/Checkbox_b.png" />
+                        <button type="button" onclick="changeImg1()">
+                            <img src="/../public/images/Checkbox_b.png" id ="button_explanation"/>
                         </button>
                     </div>
                 </div>
 
                 <div id="agree">
                     <div>
-                        <button type="button">
-                            <img src="/../public/images/Checkbox_b.png" />
+                        <button type="button" onclick="changeImg2()">
+                            <img src="/../public/images/Checkbox_b.png" id="button_everything" />
                         </button>
                         <p>전체동의</p>
                     </div>
@@ -272,7 +310,7 @@
                     <ul>
                         <li>
                             <button type="button" class="check">
-                                <img src="/../public/images/icon_uncheck.png" />
+                                <img src="/../public/images/icon_uncheck.png" id="uncheck_1"/>
                             </button>
                             <p>[필수]고유식별번호 처리 동의</p>
                             <button type="button" class="detail">
@@ -281,7 +319,7 @@
                         </li>
                         <li>
                             <button type="button" class="check">
-                                <img src="/../public/images/icon_uncheck.png" />
+                                <img src="/../public/images/icon_uncheck.png" id="uncheck_2"/>
                             </button>
                             <p>[필수]개인정보 제공동의</p>
                             <button type="button" class="detail">
@@ -290,7 +328,7 @@
                         </li>
                         <li>
                             <button type="button" class="check">
-                                <img src="/../public/images/icon_uncheck.png" />
+                                <img src="/../public/images/icon_uncheck.png" id="uncheck_3"/>
                             </button>
                             <p>[필수]서비스 이용 약관동의</p>
                             <button type="button" class="detail">
