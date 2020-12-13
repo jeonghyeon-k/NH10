@@ -25,7 +25,7 @@
        </div>
        <div class="box-container4">
            <div class="box4_1">총 저축 금액</div>
-           <div class="box4_2">280,000</div>
+           <div class="box4_2"><%=four%></div>
            <div class="box4_3">원</div>
        </div>
        <div class="box-container5">
@@ -59,7 +59,8 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            display:false
+                            display:false,
+                            beginAtZero:true
                             },
                         gridLines:{
                             display:false

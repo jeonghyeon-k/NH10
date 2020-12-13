@@ -15,7 +15,7 @@ const GetMain = (req, res) => {
     htmlstream =
         htmlstream +
         fs.readFileSync(__dirname + "/../../views/c_consumption.ejs", "utf8")
-let recarray = "";
+
     console.log(
         api
             .card({
