@@ -14,9 +14,9 @@ if (("" + day).length == 1) {
 }
 
 const tsymd = year + "" + month + "" + day
-const iscd = "000530" //기관코드
+const iscd = "000537" //기관코드
 const accessToKen =
-    "74608b853a7178ab3b779ea5a44c2a3826dd8af687e4811d6362e934c5983ad0" //인증키
+    "238489426e54540b1cee32c5a2066c0c9e9f25166bebdc9696fa76e4657c11e8" //인증키
 
 exports.api = ({ url, type, param, apiNm, isTuno }) => {
     param.Header = {
