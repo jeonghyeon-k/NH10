@@ -39,10 +39,12 @@ const GetMain = (req, res) => {
                                 })
                                 .then((data)=>{
                                     data_three=data.data.Ldbl
+                                    console.log(data_one, data_two, data_three)
                                     res.end(ejs.render(htmlstream,{
                                         one:data_one,
                                         two:data_two,
                                         three:data_three,
+                                        four:(parseInt(data_one)+parseInt(data_two)+parseInt(data_three)).toLocaleString(),
                                         type:"saving"
                                     }))
                                 })
