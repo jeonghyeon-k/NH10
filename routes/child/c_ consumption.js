@@ -1,7 +1,7 @@
 const express = require("express")
 const fs = require("fs")
 const ejs = require("ejs")
-const api = require("../../../Activity")
+const api = require("../../Activity")
 const router = express.Router()
 
 const GetMain = (req, res) => {
@@ -15,9 +15,7 @@ const GetMain = (req, res) => {
     htmlstream =
         htmlstream +
         fs.readFileSync(__dirname + "/../../views/c_consumption.ejs", "utf8")
-    res.end(ejs.render(htmlstream, { type: "consumption" }))
-    res.end(ejs.render(htmlstream, {}))
-
+let recarray = "";
     console.log(
         api
             .card({
@@ -29,8 +27,9 @@ const GetMain = (req, res) => {
                 Dmcnt: "15"
             })
             .then((data) => {
-                console.log(data.data)
-                res.end(ejs.render(htmlstream, {}))
+                //console.log(data.data.REC)
+
+                res.end(ejs.render(htmlstream, { type: "consumption", exList: data.data.REC }))
             })
     )
 }
