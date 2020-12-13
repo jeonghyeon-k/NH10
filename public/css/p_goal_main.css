@@ -1,4 +1,4 @@
-.wrap{
+.wrap {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -6,12 +6,12 @@
 .box-container1 {
     width: 460px;
     height: 90px;
-    margin-left:20px;
-    margin-right:20px;
-    margin-bottom:60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
 }
 
-.box1_1{ 
+.box1_1 {
     display: inline-block;
     width: 385px;
     height: 92px;
@@ -26,24 +26,23 @@
     color: #000000;
 }
 
-.box1_2{
+.box1_2 {
     display: inline-block;
     width: 44px;
     height: 43px;
     object-fit: contain;
     margin-bottom: -4px;
-    margin-left:-25px;
+    margin-left: -25px;
     line-height: 1.16;
     letter-spacing: normal;
     object-fit: contain;
 }
 
-
 .box-container2 {
     width: 460px;
     height: 485px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 20px;
     border: solid 2px #6dce59;
 }
@@ -51,23 +50,23 @@
 .box-container2-1 {
     width: 389px;
     height: 145px;
-    margin-left:34px;
-    margin-right:37px;
-    margin-top:32px;
+    margin-left: 34px;
+    margin-right: 37px;
+    margin-top: 32px;
 }
 .box2_1 {
-    float:left;
+    float: left;
     width: 143px;
     height: 143px;
     background-color: white;
 }
 
-.box2_2{
+.box2_2 {
     display: inline-block;
-    padding:0px;
+    padding: 0px;
     width: 145px;
     height: 37px;
-    margin-left:99px;
+    margin-left: 99px;
     font-family: NanumBarunGothic;
     font-size: 32px;
     font-weight: normal;
@@ -78,14 +77,14 @@
     text-align: left;
     color: #000000;
 }
-.box2_3{
+.box2_3 {
     display: inline-block;
     width: 200px;
     height: 37px;
     font-family: NanumBarunGothic;
     font-size: 32px;
-    margin-top:18px;
-    margin-left:44px;
+    margin-top: 18px;
+    margin-left: 44px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -96,27 +95,27 @@
 }
 
 .box-container2-2 {
-    float:left;
+    float: left;
     width: 115px;
     height: 124px;
-    padding:0px;
-    margin-left:34px;
-    margin-top:50px;
+    padding: 0px;
+    margin-left: 34px;
+    margin-top: 50px;
 }
 .box2_4 {
-    float:left;
+    float: left;
     width: 18px;
     height: 124px;
-    padding-left:0px;
+    padding-left: 0px;
     object-fit: contain;
 }
 .box2_5 {
     display: inline-block;
-    padding:0px;
+    padding: 0px;
     width: 85px;
     height: 26px;
-    margin-left:4px;
-    margin-bottom:25px;
+    margin-left: 4px;
+    margin-bottom: 25px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -132,9 +131,9 @@
     display: inline-block;
     width: 211px;
     height: 124px;
-    margin-top:50px;
-    margin-left:60px;
-    margin-right:32px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 32px;
 }
 
 .box-container2-4 {
@@ -143,7 +142,7 @@
     margin-bottom: 15px;
 }
 .box2_6 {
-    float:left;
+    float: left;
     width: 101px;
     height: 36px;
     border-radius: 20px;
@@ -153,7 +152,7 @@
     display: inline-block;
     width: 105px;
     height: 26px;
-    margin-top:10px;
+    margin-top: 10px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -163,9 +162,9 @@
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-  }
+}
 
-.box2_8{
+.box2_8 {
     height: 26px;
     font-family: NanumBarunGothic;
     font-size: 22px;
@@ -176,29 +175,29 @@
     letter-spacing: normal;
     text-align: center;
     color: #000000;
-  }
+}
 
 .box-container2-5 {
     display: inline-block;
     width: 450px;
     height: 71px;
-    margin-top:45px;
-    margin-left:5px;
-    margin-right:5px;
-    margin-bottom:22px;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 22px;
 }
 .box-container2-5_1 {
     display: inline-block;
     height: 71px;
-    margin-top:22px;
-    margin-bottom:22px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
-.box2_9{
-    float:left;
+.box2_9 {
+    float: left;
     width: 112px;
     height: 27px;
-    margin-right:57px;
-    margin-left:56px;
+    margin-right: 57px;
+    margin-left: 56px;
     font-family: NanumBarunGothic;
     font-size: 24px;
     font-weight: normal;
@@ -208,20 +207,27 @@
     letter-spacing: normal;
     text-align: left;
     color: #6dce59;
-  }
-.box2_10{
-    float:left;
+}
+.box2_9 > a {
+    font-family: NanumBarunGothic;
+    font-size: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: #6dce59;
+}
+.box2_10 {
+    float: left;
     width: 0;
     height: 27px;
-    margin-top:8px;
+    margin-top: 8px;
     border-left: solid 2px #6dce59;
 }
-.box2_11{
+.box2_11 {
     display: inline-block;
     width: 91px;
     height: 27px;
-    margin-right:63px;
-    margin-left:68px;
+    margin-right: 63px;
+    margin-left: 68px;
     font-family: NanumBarunGothic;
     font-size: 24px;
     font-weight: normal;

@@ -7,7 +7,15 @@
             type="text/javascript"
             charset="utf-8"
         ></script>
-        <script></script>
+        <script>
+            $(function () {
+                let sBtn = $("ul > li")
+                sBtn.find("a").click(function () {
+                    sBtn.removeClass("active")
+                    $(this).parent().addClass("active")
+                })
+            })
+        </script>
         <style type="text/css">
             #navbarwrap {
                 max-width: 460px;
@@ -67,34 +75,6 @@
         </style>
     </head>
     <body>
-        <script>
-            $(function () {
-                let sBtn = $("ul > li")
-                sBtn.find("a").click(function () {
-                    sBtn.removeClass("active")
-                    $(this).parent().addClass("active")
-                    console.log(this)
-                })
-            })
-            let para = document.location.href.split("/")
-            para.forEach((element) => {
-                switch (element) {
-                    case "consumption":
-                        console.log("consumption")
-                        $("#consumption").addClass("active")
-                        break
-                    case "saving":
-                        console.log("saving")
-                        $("#saving").addClass("active")
-                        break
-                    case "goal":
-                        console.log("goal")
-                        $("#goal").addClass("active")
-                        break
-                }
-            })
-            $("#consumption").addClass("active")
-        </script>
         <div id="navbarwrap">
             <div id="logo">
                 <a href="/c">
