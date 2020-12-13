@@ -102,9 +102,13 @@
                 vertical-align: text-bottom;
             }
 
-            #ex_total > div.gage > img {
-                height: 84px;
+            #ex_total > progress.gauge {
+                -webkit-appearance: none;
+                height: 50px;
                 width: 404px;
+            }
+            ::-webkit-progress-bar{
+                background-color: #ebebeb;
             }
 
             #ex_total > p.balance {
@@ -383,7 +387,7 @@
                 <%let total = 0;%>
                 <%exList.forEach(function(el){total+=Number(el.Usam);});%>
                 <h2><%= comma(String(total)) + '원' %></h2>
-                <div class="gage"><img src="/../public/images/gage.png" /></div>
+                <progress class="gauge" value="<%=parseInt(total)%>" max="<%=parseInt(total)+58000%>"></progress>
                 <p class="balance">잔액 58,000원</p>
             </div>
 
