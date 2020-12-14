@@ -58,7 +58,7 @@
 
 .box2_1 {
     float: left;
-    width: 300px;
+
     height: 90px;
     font-family: NanumBarunGothic;
     font-size: 36px;
@@ -138,11 +138,10 @@
 }
 
 .box-container4 {
-    width: 200px;
+  
     height: 26px;
     margin-top: 44px;
     margin-left: 20px;
-    margin-right: 352px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -278,10 +277,10 @@
 }
 .box6_1 {
     display: inline-block;
-    width: 170px;
+
     height: 32px;
     margin-top: 24px;
-    margin-right: 172px;
+   
     margin-bottom: 24px;
     margin-left: 172px;
     font-family: NanumBarunGothic;

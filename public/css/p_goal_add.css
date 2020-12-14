@@ -51,7 +51,7 @@
 
 .box2_1 {
     float: left;
-    width: 340px;
+   
     height: 90px;
     font-family: NanumBarunGothic;
     font-size: 36px;
@@ -97,7 +97,7 @@
 .box3_2 {
     display: inline-block;
     padding: 0px;
-    width: 128px;
+   
     height: 26px;
     margin-left: 32px;
     margin-top: 12px;
@@ -115,7 +115,7 @@
 
 .box3_3 {
     display: inline-block;
-    width: 123px;
+  
     height: 26px;
     font-family: NanumBarunGothic;
     margin-top: 23px;
@@ -131,11 +131,10 @@
 }
 
 .box-container4 {
-    width: 128px;
+  
     height: 26px;
     margin-top: 44px;
     margin-left: 20px;
-    margin-right: 352px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -253,10 +252,10 @@
 }
 .box6_1 {
     display: inline-block;
-    width: 170px;
+
     height: 32px;
     margin-top: 24px;
-    margin-right: 172px;
+
     margin-bottom: 24px;
     margin-left: 172px;
     font-family: NanumBarunGothic;

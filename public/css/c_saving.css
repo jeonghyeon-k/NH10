@@ -10,10 +10,10 @@
 }
 .box1_1 {
     display: inline-block;
-    width: 337px;
+    width: 340px;
     height: 90px;
     font-family: NanumBarunGothic;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -24,10 +24,9 @@
 }
 .box1_2 {
     display: inline-block;
-    width: 44px;
+    width: 42px;
     height: 43px;
     margin-top: 43px;
-    margin-left: 4px;
     margin-bottom: -4px;
     object-fit: contain;
     font-stretch: normal;
@@ -44,7 +43,6 @@
     margin-right: 20px;
 }
 .box2_1 {
-    width: 162px;
     height: 32px;
     font-family: NanumBarunGothic;
     margin-top: 50px;
@@ -65,7 +63,6 @@
 }
 .box3_1 {
     display: inline-block;
-    width: 120px;
     height: 26px;
     margin-top: 24px;
     margin-bottom: 6px;
@@ -97,9 +94,8 @@
 }
 .box3_3 {
     display: inline-block;
-    width: 30px;
     height: 37px;
-    margin-left: -20px;
+    margin-left: -35px;
     margin-top: 19px;
     font-family: NanumBarunGothic;
     font-size: 22px;
@@ -129,7 +125,6 @@ canvas#graph {
     margin-right: 20px;
 }
 .box5_1 {
-    width: 162px;
     height: 32px;
     margin: 90px 42px 40px 0;
     font-family: NanumBarunGothic;
@@ -159,7 +154,7 @@ canvas#graph {
     background-color: #6dce59;
 }
 .box6_1_1 {
-    width: 98px;
+
     height: 20px;
     padding-top: 15px;
     padding-left: 24px;
@@ -175,7 +170,6 @@ canvas#graph {
 }
 .box6_1_2 {
     display: inline-block;
-    width: 231px;
     height: 26px;
     margin-top: 7px;
     margin-left: 24px;
@@ -191,7 +185,7 @@ canvas#graph {
 }
 .box6_1_3 {
     display: inline-block;
-    width: 36px;
+
     height: 36px;
     margin-left: 145px;
     margin-top: -7px;
@@ -199,10 +193,10 @@ canvas#graph {
     object-fit: contain;
 }
 .box6_2 {
-    width: 212px;
+
     height: 26px;
     margin-top: 32px;
-    margin-left: 226px;
+    margin-right: 20px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -235,7 +229,7 @@ canvas#graph {
     display: inline-block;
     width: 78px;
     height: 32px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 22px;
     font-weight: normal;
     color: #000000;
@@ -248,7 +242,6 @@ canvas#graph {
 }
 .box6_6 {
     display: inline-block;
-    width: 73px;
     height: 32px;
     margin-left: 2px;
     font-family: NanumBarunGothic;
@@ -265,7 +258,6 @@ canvas#graph {
     display: inline-block;
     width: 20px;
     height: 32px;
-    margin-left: -5px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -293,7 +285,7 @@ canvas#graph {
     background-color: #599fce;
 }
 .box7_1_1 {
-    width: 134px;
+
     height: 20px;
     padding-top: 15px;
     padding-left: 24px;
@@ -309,7 +301,7 @@ canvas#graph {
 }
 .box7_1_2 {
     display: inline-block;
-    width: 226px;
+
     height: 26px;
     margin-top: 7px;
     margin-left: 24px;
@@ -333,10 +325,10 @@ canvas#graph {
     object-fit: contain;
 }
 .box7_2 {
-    width: 232px;
+
     height: 26px;
     margin-top: 32px;
-    margin-left: 206px;
+    margin-right: 20px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -369,7 +361,7 @@ canvas#graph {
     display: inline-block;
     width: 78px;
     height: 32px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 22px;
     font-weight: normal;
     color: #000000;
@@ -382,7 +374,7 @@ canvas#graph {
 }
 .box7_6 {
     display: inline-block;
-    width: 73px;
+
     height: 32px;
     margin-left: 2px;
     font-family: NanumBarunGothic;
@@ -399,7 +391,7 @@ canvas#graph {
     display: inline-block;
     width: 20px;
     height: 32px;
-    margin-left: -3px;
+
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;

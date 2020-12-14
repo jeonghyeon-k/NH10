@@ -13,7 +13,7 @@
     width: 157px;
     height: 42px;
     font-family: NanumBarunGothic;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -23,18 +23,17 @@
     color: #000000;
 }
 .box-container2{
-    width: 460px;
+
     height: 42px;
     margin-left:20px;
     margin-right:20px;
 }
 .box2_1{
     display: inline-block;
-    width: 410px;
     height: 42px;
     margin-top: 8px;
     font-family: NanumBarunGothic;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -45,8 +44,8 @@
 }
 .box2_2{
     display: inline-block;
-    width: 35px;
-    height: 35px;
+
+    height: 38px;
     margin-left:4px;
     margin-bottom: -4px;
     object-fit: contain;
@@ -64,7 +63,7 @@
     margin-right:20px;
 }
 .box3_1{
-    width: 235px;
+
     height: 32px;
     margin-top: 48px;
     font-family: NanumBarunGothic;
@@ -149,7 +148,7 @@ canvas#graph{
     margin-right:20px;
 }
 .box6_1{
-    width: 162px;
+
     height: 32px;
     margin: 90px 42px 40px 0;
     font-family: NanumBarunGothic;
@@ -162,27 +161,27 @@ canvas#graph{
     text-align: left;
     color: #000000;
 }
-.box-container7{
-    width:460px;
-    height:202px;
-    margin-top:40px;
+.box-container7 {
+    width: 460px;
+    height: 202px;
+    margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
-    border : 1px solid #c4c4c4;
+    border: 1px solid #c4c4c4;
     border-radius: 20px;
 }
-.box7_1{
-    width:460px;
-    height:84px;
+.box7_1 {
+    width: 460px;
+    height: 84px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #6dce59;
 }
-.box7_1_1{
-    width: 98px;
+.box7_1_1 {
+
     height: 20px;
     padding-top: 15px;
-    padding-left:24px;
+    padding-left: 24px;
     font-family: NanumBarunGothic;
     font-size: 18px;
     font-weight: normal;
@@ -193,12 +192,11 @@ canvas#graph{
     text-align: left;
     color: #145b8d;
 }
-.box7_1_2{
+.box7_1_2 {
     display: inline-block;
-    width: 231px;
     height: 26px;
-    margin-top:7px;
-    margin-left:24px;
+    margin-top: 7px;
+    margin-left: 24px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -209,20 +207,20 @@ canvas#graph{
     text-align: left;
     color: #ffffff;
 }
-.box7_1_3{
+.box7_1_3 {
     display: inline-block;
-    width: 36px;
+
     height: 36px;
     margin-left: 145px;
-    margin-top:-7px;
-    margin-bottom:-5px;
+    margin-top: -7px;
+    margin-bottom: -5px;
     object-fit: contain;
 }
-.box7_2{
-    width: 212px;
+.box7_2 {
+
     height: 26px;
-    margin-top:32px;
-    margin-left:226px;
+    margin-top: 32px;
+    margin-right: 20px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -233,29 +231,29 @@ canvas#graph{
     text-align: right;
     color: #000000;
 }
-.box7_3{
+.box7_3 {
     display: inline-block;
     width: 63px;
     height: 24px;
-    margin-bottom:-4px;
-    margin-top:12px;
-    margin-left:24px;
+    margin-bottom: -4px;
+    margin-top: 12px;
+    margin-left: 24px;
     object-fit: contain;
 }
-.box7_4{
+.box7_4 {
     display: inline-block;
     width: 63px;
     height: 24px;
-    margin-bottom:-4px;
-    margin-top:12px;
-    margin-left:4px;
+    margin-bottom: -4px;
+    margin-top: 12px;
+    margin-left: 4px;
     object-fit: contain;
 }
-.box7_5{
+.box7_5 {
     display: inline-block;
-    width:78px;
-    height:32px;
-    margin-left:100px;
+    width: 78px;
+    height: 32px;
+    margin-left: 80px;
     font-size: 22px;
     font-weight: normal;
     color: #000000;
@@ -266,11 +264,10 @@ canvas#graph{
     letter-spacing: normal;
     text-align: right;
 }
-.box7_6{
+.box7_6 {
     display: inline-block;
-    width: 73px;
     height: 32px;
-    margin-left:2px;
+    margin-left: 2px;
     font-family: NanumBarunGothic;
     font-size: 31px;
     font-weight: bold;
@@ -281,11 +278,10 @@ canvas#graph{
     text-align: left;
     color: #6dce59;
 }
-.box7_7{
+.box7_7 {
     display: inline-block;
-    width:20px;
-    height:32px;
-    margin-left:-5px;
+    width: 20px;
+    height: 32px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -305,18 +301,18 @@ canvas#graph{
     border : 1px solid #c4c4c4;
     border-radius: 20px;
 }
-.box8_1{
-    width:460px;
-    height:84px;
+.box8_1 {
+    width: 460px;
+    height: 84px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #599fce;
 }
-.box8_1_1{
-    width: 134px;
+.box8_1_1 {
+
     height: 20px;
     padding-top: 15px;
-    padding-left:24px;
+    padding-left: 24px;
     font-family: NanumBarunGothic;
     font-size: 18px;
     font-weight: normal;
@@ -327,12 +323,12 @@ canvas#graph{
     text-align: left;
     color: #ffc83d;
 }
-.box8_1_2{
+.box8_1_2 {
     display: inline-block;
-    width: 226px;
+
     height: 26px;
-    margin-top:7px;
-    margin-left:24px;
+    margin-top: 7px;
+    margin-left: 24px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -343,20 +339,20 @@ canvas#graph{
     text-align: left;
     color: #ffffff;
 }
-.box8_1_3{
+.box8_1_3 {
     display: inline-block;
     width: 36px;
     height: 36px;
     margin-left: 150px;
-    margin-top:-7px;
-    margin-bottom:-5px;
+    margin-top: -7px;
+    margin-bottom: -5px;
     object-fit: contain;
 }
-.box8_2{
-    width: 232px;
+.box8_2 {
+
     height: 26px;
-    margin-top:32px;
-    margin-left:206px;
+    margin-top: 32px;
+    margin-right: 20px;
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
@@ -367,29 +363,29 @@ canvas#graph{
     text-align: right;
     color: #000000;
 }
-.box8_3{
+.box8_3 {
     display: inline-block;
     width: 63px;
     height: 24px;
-    margin-bottom:-4px;
-    margin-top:12px;
-    margin-left:24px;
+    margin-bottom: -4px;
+    margin-top: 12px;
+    margin-left: 24px;
     object-fit: contain;
 }
-.box8_4{
+.box8_4 {
     display: inline-block;
     width: 63px;
     height: 24px;
-    margin-bottom:-4px;
-    margin-top:12px;
-    margin-left:4px;
+    margin-bottom: -4px;
+    margin-top: 12px;
+    margin-left: 4px;
     object-fit: contain;
 }
-.box8_5{
+.box8_5 {
     display: inline-block;
-    width:78px;
-    height:32px;
-    margin-left:100px;
+    width: 78px;
+    height: 32px;
+    margin-left: 80px;
     font-size: 22px;
     font-weight: normal;
     color: #000000;
@@ -400,11 +396,11 @@ canvas#graph{
     letter-spacing: normal;
     text-align: right;
 }
-.box8_6{
+.box8_6 {
     display: inline-block;
-    width: 73px;
+
     height: 32px;
-    margin-left:2px;
+    margin-left: 2px;
     font-family: NanumBarunGothic;
     font-size: 31px;
     font-weight: bold;
@@ -415,11 +411,11 @@ canvas#graph{
     text-align: left;
     color: #599fce;
 }
-.box8_7{
+.box8_7 {
     display: inline-block;
-    width:20px;
-    height:32px;
-    margin-left:-3px;
+    width: 20px;
+    height: 32px;
+
     font-family: NanumBarunGothic;
     font-size: 22px;
     font-weight: normal;
