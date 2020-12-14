@@ -4,6 +4,18 @@ const ejs = require("ejs")
 const api = require("../../Activity")
 const router = express.Router()
 
+function delay(gap) {
+    var then, now
+
+    then = new Date().getTime()
+
+    now = then
+
+    while (now - then < gap) {
+        now = new Date().getTime()
+    }
+}
+
 const GetMain = (req, res) => {
     let htmlstream = ""
     htmlstream =
@@ -27,9 +39,13 @@ const GetMain = (req, res) => {
                 Dmcnt: "15",
             })
             .then((data) => {
-                //console.log(data.data.REC)
-
-                res.end(ejs.render(htmlstream, { type: "consumption", exList: data.data.REC }))
+                delay(800)
+                res.end(
+                    ejs.render(htmlstream, {
+                        type: "consumption",
+                        exList: data.data.REC,
+                    })
+                )
             })
     )
 }
