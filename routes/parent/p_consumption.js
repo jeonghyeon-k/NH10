@@ -45,7 +45,7 @@ const GetMain = (req, res) => {
                 })
                 .then((data) => {
                     //console.log(data.data.REC)
-                    delay(800)
+                    delay(1000)
                     res.end(ejs.render(htmlstream, { type: "consumption", exList_p: data.data.REC }))
                 })
         )

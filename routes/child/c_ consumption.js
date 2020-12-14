@@ -39,7 +39,7 @@ const GetMain = (req, res) => {
                 Dmcnt: "15",
             })
             .then((data) => {
-                delay(800)
+                delay(1000)
                 res.end(
                     ejs.render(htmlstream, {
                         type: "consumption",
