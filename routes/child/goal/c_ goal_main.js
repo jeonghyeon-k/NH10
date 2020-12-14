@@ -5,6 +5,7 @@ const api = require("../../../Activity")
 const router = express.Router()
 
 const GetMain = (req, res) => {
+   
     let htmlstream = ""
     htmlstream =
         htmlstream +
@@ -16,7 +17,7 @@ const GetMain = (req, res) => {
         htmlstream +
         fs.readFileSync(__dirname + "/../../../views/c_goal_main.ejs", "utf8")
     
-        
+        res.end(ejs.render(htmlstream, { type: "goal" }))
 }
 
 router.get("/", GetMain)

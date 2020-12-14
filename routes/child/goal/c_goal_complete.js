@@ -5,6 +5,7 @@ const router = express.Router()
 
 const GetMain = (req, res) => {
     let htmlstream = ""
+   
     htmlstream =
         htmlstream +
         fs.readFileSync(__dirname + "/../../../views/header.ejs", "utf8")
@@ -21,4 +22,5 @@ const GetMain = (req, res) => {
 }
 
 router.get("/", GetMain)
+
 module.exports = router
