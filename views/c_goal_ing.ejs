@@ -45,7 +45,48 @@
             }
             .gaugebar {
                 height: 178px;
-                border: solid 2px #6dce59;
+            }
+            .gauge{
+                margin-top:84px;
+                padding-left:28px;
+                -webkit-appearance: none;
+                height: 50px;
+                width: 404px;
+            }
+            ::-webkit-progress-bar{
+                background-color: #ebebeb;
+            }
+            .text_1{
+                display: inline-block;
+                width: 63px;
+                height: 20px;
+                margin-top: 14px;
+                padding-left:28px;
+                font-family: NanumBarunGothic;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.67;
+                letter-spacing: normal;
+                text-align: left;
+                color: #777777;
+            }
+            .text_2{
+                display: inline-block;
+                width: 84px;
+                height: 20px;
+                margin-top: 14px;
+                margin-left:257px;
+                font-family: NanumBarunGothic;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.67;
+                letter-spacing: normal;
+                text-align: left;
+                color: #777777;
             }
             .deposit {
                 text-align: center;
@@ -116,10 +157,10 @@
     <body>
         <div class="container">
             <div class="title">NH10님.</div>
-            <div class="title_secend">곧 달성하겠어요</div>
+            <div class="title_secend">달성을 축하드려요</div>
             <div class="titleIcon">
                 <img
-                    src="/../public/images/icon_imoge07@2x.png"
+                    src="/../public/images/icon_imoge10.png"
                     alt="logo"
                     width="100%"
                     height="100%"
@@ -129,8 +170,12 @@
             <div class="goalbox">
                 <div class="goaldate">20.12.09 ~ 20.12.23</div>
                 <div class="goalname">아디다스 패딩</div>
-                <div class="gaugebar">gaugebar</div>
-                <div class="deposit">추가입금</div>
+                <div class="gaugebar">
+                    <progress class="gauge" value="100" max="100"></progress>
+                    <div class="text_1">5,000원</div>
+                    <div class="text_2">150,000원</div>
+                </div>
+                <div class="deposit">달성 금액 수령</div>
             </div>
             <div class="addbox">
                 <div class="addicon">
