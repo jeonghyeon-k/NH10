@@ -11,7 +11,7 @@ const GetMain = (req, res) => {
     let data_two
     let data_three
     htmlstream =
-        fs.readFileSync(__dirname + "/../../views/navBar.ejs", "utf8")
+        fs.readFileSync(__dirname + "/../../views/navBar_p.ejs", "utf8")
     htmlstream = htmlstream + fs.readFileSync(
         __dirname + "/../../views/p_saving.ejs",
         "utf8"

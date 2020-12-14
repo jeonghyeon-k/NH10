@@ -15,9 +15,21 @@ const GetMain = (req, res) => {
     htmlstream =
         htmlstream +
         fs.readFileSync(__dirname + "/../../../views/c_goal_main.ejs", "utf8")
-
-    res.end(ejs.render(htmlstream, { type: "goal" }))
-
+    
+    console
+        .log
+       
+        api
+            .accout({
+                Bncd: "011",
+                Acno: "3020000002202",
+            })
+            .then((data) => {
+                console.log(data.data)
+                res.end(ejs.render(htmlstream, { type: "goal" }))
+    
+            })
+        
 }
 
 router.get("/", GetMain)
