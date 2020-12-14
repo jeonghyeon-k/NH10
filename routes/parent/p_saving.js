@@ -39,6 +39,15 @@ const GetMain = (req, res) => {
                                 })
                                 .then((data)=>{
                                     data_three=data.data.Ldbl
+                                    if(data_one === undefined){
+                                        data_one = 10000
+                                    }
+                                    if(data_two === undefined){
+                                        data_two = 20000
+                                    }
+                                    if(data_three === undefined){
+                                        data_three = 30000
+                                    }
                                     console.log(data_one, data_two, data_three)
                                     res.end(ejs.render(htmlstream,{
                                         one:data_one,
