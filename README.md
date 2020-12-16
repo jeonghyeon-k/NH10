@@ -4,7 +4,7 @@
 
 본 서비스는 10대 자녀의 "독립적인 경제습관을 길러주는 금융 서비스"입니다.
 
-[시연 영상 보러가기]](https://drive.google.com/file/d/1DWBlouPocQO_U2zKM4MSiy7Jmp2SLit0/view?usp=sharing)
+[시연 영상 보러가기](https://drive.google.com/file/d/1DWBlouPocQO_U2zKM4MSiy7Jmp2SLit0/view?usp=sharing){: target="_blank"}
 
 
 ![설명사진1](./main.png)
